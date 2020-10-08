@@ -1,6 +1,14 @@
 var ARC01 = [ "ARC01" , {
+     arrow: true,
+     arrowGap: 8,
+     arrowColor: "black",
+     arrowSize: "10px",
      innerRadius: 10,
      outerRadius: 20,
+     GENEAnimationDisplay:true,
+     GENEAnimationType:"linear",
+     GENEAnimationTime:1000,
+     GENEAnimationDelay:50,
   }, [
      {chr: "NC_011360", strand : "+", start: "1", end: "840", color: "blue", type : "gene", des: "cox3"},
      {chr: "NC_011360", strand : "+", start: "1", end: "100", color: "blue", type : "cds", des: "cox3"},
