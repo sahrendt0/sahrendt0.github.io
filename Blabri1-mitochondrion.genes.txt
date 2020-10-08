@@ -10,9 +10,9 @@ var ARC01 = [ "ARC01" , {
      GENEAnimationTime:1000,
      GENEAnimationDelay:50,
   }, [
-     {chr: "NC_011360", strand : "+", start: "1", end: "840", color: "blue", type : "gene", des: "cox3"},
-     {chr: "NC_011360", strand : "+", start: "1", end: "100", color: "blue", type : "cds", des: "cox3"},
-     {chr: "NC_011360", strand : "+", start: "300", end: "840", color: "blue", type : "cds", des: "cox3"},
+     {chr: "NC_011360", strand : "+", start: "1", end: "840", color: "green", type : "gene", des: "cox3"},
+     {chr: "NC_011360", strand : "+", start: "1", end: "100", color: "green", type : "cds", des: "cox3"},
+     {chr: "NC_011360", strand : "+", start: "300", end: "840", color: "green", type : "cds", des: "cox3"},
      {chr: "NC_011360", strand : "-", start: "1056", end: "1802", color: "green", des: "cox2"},
      {chr: "NC_011360", start: "2606", end: "4549", color: "purple", des: "nad5"},
      {chr: "NC_011360", start: "5167", end: "5958", color: "orange", des: "atp6"},
