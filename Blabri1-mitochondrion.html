@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NGCircos.js</title>
+    </head>
+    <body>
+        <!-- NGCircos.js, Jquery.js and D3.js import -->
+        <script src="./lib/jquery.js"></script>
+        <script src="./lib/d3.js"></script>
+        <script src="./lib/NGCircos.js"></script>
+        <!-- Prepare a <div> tag with "NGCircos" id to set the picture position your will draw in html -->
+        <div id="NGCircos"></div>
+<!-- Data configuration -->
+<script src="./Blabri1-mitochondrion.genes.txt"></script>
+<!-- Genome configuration -->
+<script>
+  var TEXT01 = [ "TEXT01" , {
+     x: -100,
+     y: 0,
+     textSize: 20,
+     textWeight: "bold", //normal,bold,bolder,lighter,100,200,300,400,500,600,700,800,900
+     textColor: "black",
+     textOpacity: 1.0,
+     text: "Blastocladiella emersonii"
+  }];
+  var NGCircosGenome = [
+    [
+     ["NC_011360" , 36503]
+    ]
+  ];
+
+  NGCircos01 = new NGCircos(TEXT01,ARC01,NGCircosGenome,{
+  //Main configuration
+     zoom : true,
+     target : "NGCircos",
+     svgWidth : 900,
+     svgHeight : 600,
+     svgClassName: "NGCircos",
+     chrPad : 0.04,
+     innerRadius: 250,
+     outerRadius: 255,
+     genomeFillColor: ["#000000"],
+     ARCMouseOnDisplay : true,
+     ARCMouseEvent : true,
+     ARCMouseOverDisplay : true,
+     ARCMouseOverColor : "none",
+     ARCMouseOverArcStrokeColor : "black",
+     ARCMouseOutDisplay : true,
+     ARCMouseOutAnimationTime : 100,
+     ARCMouseOutArcStrokeColor : "none",
+     ARCMouseOutColor : "none"
+  });
+  NGCircos01.draw_genome(NGCircos01.genomeLength);
+  NGCircos01.draw_genome(NGCircos01.genomeLength2); // NGCircos2.js callback second time
+</script>
+    </body>
+</html>
