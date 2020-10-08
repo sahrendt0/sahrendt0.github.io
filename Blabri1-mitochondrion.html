@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>NGCircos.js</title>
+        <title>Blastocladiella emersonii Mitochondrion</title>
     </head>
     <body>
         <!-- NGCircos.js, Jquery.js and D3.js import -->
@@ -15,32 +15,96 @@
 <script src="./Blabri1-mitochondrion.genes.txt"></script>
 <!-- Genome configuration -->
 <script>
-  var TEXT01 = [ "TEXT01" , {
-     x: -100,
-     y: 0,
-     textSize: 20,
-     textWeight: "bold", //normal,bold,bolder,lighter,100,200,300,400,500,600,700,800,900
-     textColor: "black",
-     textOpacity: 1.0,
-     text: "Blastocladiella emersonii"
-  }];
   var NGCircosGenome = [
     [
      ["NC_011360" , 36503]
     ]
   ];
 
-  NGCircos01 = new NGCircos(TEXT01,ARC01,NGCircosGenome,{
+  NGCircos01 = new NGCircos(GENE0,GENE1,GENE2,GENE3,GENE4,GENE5,GENE6,GENE7,GENE8,GENE9,GENE10,GENE11,GENE12,GENE13,GENE14,GENE15,GENE16,GENE17,GENE18,GENE19,GENE20,GENE21,GENE22,GENE23,GENE24,GENE25,GENE26,GENE27,GENE28,GENE29,GENE30,GENE31,GENE32,GENE33,GENE34,GENE35,GENE36,GENE37,GENE38,GENE39,GENE40,GENE41,GENE42,GENE43,NGCircosGenome,{
   //Main configuration
      zoom : true,
      target : "NGCircos",
      svgWidth : 900,
      svgHeight : 600,
      svgClassName: "NGCircos",
-     chrPad : 0.04,
+     chrPad : 0, // circularity
      innerRadius: 250,
      outerRadius: 255,
      genomeFillColor: ["#000000"],
+     genomeLabel: {display:false},
+     ticks:{display:false},
+   GENEMouseEvent : true,
+   GENEMouseClickDisplay : true,
+   GENEMouseClickColor : "none",
+   GENEMouseClickArcOpacity : 1.0,
+   GENEMouseClickArcStrokeColor : "none",
+   GENEMouseClickArcStrokeWidth : 1,
+   GENEMouseClickTextFromData : "first",   //first,second,third,fifth column
+   GENEMouseClickTextOpacity : 1,
+   GENEMouseClickTextColor : "#000000",
+   GENEMouseClickTextSize : 18,
+   GENEMouseClickTextPostionX : 0,
+   GENEMouseClickTextPostionY : 0,
+   GENEMouseClickTextDrag : false,
+/*
+   GENEMouseDownDisplay : false,
+   GENEMouseDownColor : "none",
+   GENEMouseDownArcOpacity : 1.0,
+   GENEMouseDownArcStrokeColor : "#F26223",
+   GENEMouseDownArcStrokeWidth : 1,
+   GENEMouseEnterDisplay : false,
+   GENEMouseEnterColor : "none",
+   GENEMouseEnterArcOpacity : 1.0,
+   GENEMouseEnterArcStrokeColor : "#F26223",
+   GENEMouseEnterArcStrokeWidth : 1,
+   GENEMouseLeaveDisplay : false,
+   GENEMouseLeaveColor : "none",
+   GENEMouseLeaveArcOpacity : 1.0,
+   GENEMouseLeaveArcStrokeColor : "#F26223",
+   GENEMouseLeaveArcStrokeWidth : 0,
+   GENEMouseMoveDisplay : false,
+   GENEMouseMoveColor : "none",
+   GENEMouseMoveArcOpacity : 1.0,
+   GENEMouseMoveArcStrokeColor : "#F26223",
+   GENEMouseMoveArcStrokeWidth : 0,
+*/
+// MouseOver, MouseOut
+   GENEMouseOverDisplay : true,
+   GENEMouseOverColor : "none",
+   GENEMouseOverArcOpacity : 1.0,
+   GENEMouseOverArcStrokeColor : "black", //"none","#F26223"
+   GENEMouseOverArcStrokeWidth : "none", //"none",3
+   GENEMouseOutDisplay : true,
+   GENEMouseOutAnimationTime : 500,
+   GENEMouseOutColor : "none",
+   GENEMouseOutArcOpacity : 1.0,
+   GENEMouseOutArcStrokeColor : "red",
+   GENEMouseOutArcStrokeWidth : 0,
+/*
+   GENEMouseUpDisplay : false,
+   GENEMouseUpColor : "grey",
+   GENEMouseUpArcOpacity : 1.0,
+   GENEMouseUpArcStrokeColor : "#F26223",
+   GENEMouseUpArcStrokeWidth : 0,
+*/
+
+/*
+   GENEMouseOverTooltipsHtml01 : "Gene: ",
+   GENEMouseOverTooltipsHtml02 : "<br>Start: ",
+   GENEMouseOverTooltipsHtml03 : "<br>End: ",
+   GENEMouseOverTooltipsHtml04 : "<br>Name: ",
+   GENEMouseOverTooltipsHtml05 : "<br>Strand: ",
+   GENEMouseOverTooltipsHtml06 : "<br>Type: ",
+   GENEMouseOverTooltipsHtml07 : "",
+   GENEMouseOverTooltipsPosition : "absolute",
+   GENEMouseOverTooltipsBackgroundColor : "white",
+   GENEMouseOverTooltipsBorderStyle : "solid",
+   GENEMouseOverTooltipsBorderWidth : 0,
+   GENEMouseOverTooltipsPadding : "3px",
+   GENEMouseOverTooltipsBorderRadius : "3px",
+   GENEMouseOverTooltipsOpacity : 0.8, 
+*/
      ARCMouseOnDisplay : true,
      ARCMouseEvent : true,
      ARCMouseOverDisplay : true,
