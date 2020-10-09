@@ -9,14 +9,14 @@ var GENE0 = [ "GENE0" , {
   {chr: "NC_011360", strand: "+", start: "1", end: "840", type: "cds", name: "cox3"},
 ]];
 var GENE1 = [ "GENE1" , {
-  innerRadius: 10,
-  outerRadius: 25,
+  innerRadius: -5,
+  outerRadius: -20,
   cdsColor : "#4DAF4A",
   cdsStrokeColor : "none",
   cdsStrokeWidth : 0.75,
 } , [
-  {chr: "NC_011360", strand: "+", start: "1056", end: "1802", type: "gene", name: "cox2"},
-  {chr: "NC_011360", strand: "+", start: "1056", end: "1802", type: "cds", name: "cox2"},
+  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "gene", name: "cox2"},
+  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "cds", name: "cox2"},
 ]];
 var GENE2 = [ "GENE2" , {
   innerRadius: 10,
