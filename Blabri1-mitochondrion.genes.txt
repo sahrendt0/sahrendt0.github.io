@@ -5,8 +5,8 @@ var GENE0 = [ "GENE0" , {
   cdsStrokeColor : "none",
   cdsStrokeWidth : 0.75,
 } , [
-  {chr: "NC_011360", strand: "+", start: "1", end: "840", type: "gene", name: "cox3"},
-  {chr: "NC_011360", strand: "+", start: "1", end: "840", type: "cds", name: "cox3"},
+  {chr: "NC_011360", strand: "+", start: "1", end: "840", type: "gene", name: "cox3", link: "http://pfam.xfam.org/family/PF00510"},
+  {chr: "NC_011360", strand: "+", start: "1", end: "840", type: "cds", name: "cox3", link: "http://pfam.xfam.org/family/PF00510"},
 ]];
 var GENE1 = [ "GENE1" , {
   innerRadius: -5,
@@ -15,8 +15,8 @@ var GENE1 = [ "GENE1" , {
   cdsStrokeColor : "none",
   cdsStrokeWidth : 0.75,
 } , [
-  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "gene", name: "cox2"},
-  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "cds", name: "cox2"},
+  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "gene", name: "cox2", link: "http://pfam.xfam.org/family/PF00116"},
+  {chr: "NC_011360", strand: "-", start: "1056", end: "1802", type: "cds", name: "cox2", link: "http://pfam.xfam.org/family/PF00116"},
 ]];
 var GENE2 = [ "GENE2" , {
   innerRadius: 10,
@@ -435,6 +435,6 @@ var GENE43 = [ "GENE43" , {
   cdsStrokeColor : "none",
   cdsStrokeWidth : 0.75,
 } , [
-  {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "gene", name: "cob"},
-  {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "cds", name: "cob"},
+  {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "gene", name: "cob", link: "http://pfam.xfam.org/family/PF00033"},
+  {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "cds", name: "cob", link: "http://pfam.xfam.org/family/PF00033"},
 ]];
