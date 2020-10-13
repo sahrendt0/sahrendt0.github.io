@@ -45,8 +45,8 @@ var GENE4 = [ "GENE4" , {
   cdsStrokeColor : "none",
   cdsStrokeWidth : 0.75,
 } , [
-  {chr: "NC_011360", strand: "+", start: "6230", end: "9669", type: "gene", name: "cox1"},
-  {chr: "NC_011360", strand: "+", start: "6230", end: "9669", type: "cds", name: "cox1"},
+  {chr: "NC_011360", strand: "+", start: "6230", end: "9669", type: "gene", name: "cox1", link: "http://pfam.xfam.org/family/PF00115"},
+  {chr: "NC_011360", strand: "+", start: "6230", end: "9669", type: "cds", name: "cox1", link: "http://pfam.xfam.org/family/PF00115"},
 ]];
 var GENE5 = [ "GENE5" , {
   innerRadius: 10,
