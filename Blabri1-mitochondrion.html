@@ -30,7 +30,7 @@
      svgClassName: "NGCircos",
      chrPad : 0, // circularity
      innerRadius: 250,
-     outerRadius: 255,
+     outerRadius: 265,
      genomeFillColor: ["#000000"],
      genomeLabel: {display:false},
      ticks:{display:false},
@@ -90,22 +90,26 @@
    GENEMouseUpArcStrokeWidth : 0,
 */
 
+   GENEMouseOverTooltipsSetting : "custom", 
+   GENEMouseOverTooltipsHtml : " ",
 /*
-   GENEMouseOverTooltipsHtml01 : "Gene: ",
-   GENEMouseOverTooltipsHtml02 : "<br>Start: ",
-   GENEMouseOverTooltipsHtml03 : "<br>End: ",
-   GENEMouseOverTooltipsHtml04 : "<br>Name: ",
+   GENEMouseOverTooltipsHtml01 : "<br>name: ",
+   GENEMouseOverTooltipsHtml02 : "<br>start: ",
+   GENEMouseOverTooltipsHtml03 : "<br>end: ",
+   GENEMouseOverTooltipsHtml04 : " ",
    GENEMouseOverTooltipsHtml05 : "<br>Strand: ",
    GENEMouseOverTooltipsHtml06 : "<br>Type: ",
    GENEMouseOverTooltipsHtml07 : "",
-   GENEMouseOverTooltipsPosition : "absolute",
+
    GENEMouseOverTooltipsBackgroundColor : "white",
+*/
+   GENEMouseOverTooltipsPosition : "absolute",
    GENEMouseOverTooltipsBorderStyle : "solid",
-   GENEMouseOverTooltipsBorderWidth : 0,
+   GENEMouseOverTooltipsBorderWidth : 2,
    GENEMouseOverTooltipsPadding : "3px",
    GENEMouseOverTooltipsBorderRadius : "3px",
    GENEMouseOverTooltipsOpacity : 0.8, 
-*/
+/*
      ARCMouseOnDisplay : true,
      ARCMouseEvent : true,
      ARCMouseOverDisplay : true,
@@ -115,6 +119,7 @@
      ARCMouseOutAnimationTime : 100,
      ARCMouseOutArcStrokeColor : "none",
      ARCMouseOutColor : "none"
+*/
   });
   NGCircos01.draw_genome(NGCircos01.genomeLength);
   NGCircos01.draw_genome(NGCircos01.genomeLength2); // NGCircos2.js callback second time
