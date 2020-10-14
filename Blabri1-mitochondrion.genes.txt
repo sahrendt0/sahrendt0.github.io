@@ -444,3 +444,18 @@ var GENE43 = [ "GENE43" , {
   {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "gene", name: "cob", link: "http://pfam.xfam.org/family/PF00033"},
   {chr: "NC_011360", strand: "+", start: "35155", end: "36303", type: "cds", name: "cob", link: "http://pfam.xfam.org/family/PF00033"},
 ]];
+var LEGEND01 = [ "LEGEND01" , {
+   x: -70,
+   y: -50,
+   title: "",
+   titleSize: 14,
+   titleWeight: "bold",
+   GapBetweenGraphicText:5,
+   GapBetweenLines:12
+} , [
+  {type: "circle", color: "#377EB8", opacity:"1.0",circleSize:"5",text:"Ribosomal protein subunits",textSize:"12",textWeight:"normal"},
+  {type: "circle", color: "#4DAF4A", opacity:"1.0",circleSize:"5",text:"Cytochrome c oxidase (cox/cob)",textSize:"12",textWeight:"normal"},
+  {type: "circle", color: "#984EA3", opacity:"1.0",circleSize:"5",text:"nad subunit",textSize:"12",textWeight:"normal"},
+  {type: "circle", color: "#E41A1C", opacity:"1.0",circleSize:"5",text:"tRNA genes",textSize:"12",textWeight:"normal"},
+  {type: "circle", color: "#FF7F00", opacity:"1.0",circleSize:"5",text:"ATP synthase",textSize:"12",textWeight:"normal"},
+]];
