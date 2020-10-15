@@ -13,6 +13,7 @@
         <div id="NGCircos"></div>
 <!-- Data configuration -->
 <script src="./Batpra1-mitochondrion.genes.js"></script>
+<script src="./Batpra1-mitochondrion.GCavg.js"></script>
 <!-- Genome configuration -->
 <script>
   var NGCircosGenome = [
@@ -20,12 +21,12 @@
      ["FO082258" , 43614]
     ]
   ];
-  NGCircos01 = new NGCircos(GENE0,GENE1,GENE2,GENE3,GENE4,GENE5,GENE6,GENE7,GENE8,GENE9,GENE10,GENE11,GENE12,GENE13,GENE14,GENE15,GENE16,GENE17,GENE18,GENE19,GENE20,GENE21,GENE22,GENE23,GENE24,GENE25,GENE26,GENE27,GENE28,GENE29,GENE30,GENE31,GENE32,GENE33,GENE34,GENE35,GENE36,GENE37,GENE38,GENE39,GENE40,GENE41,GENE42,GENE43,GENE44,GENE45,GENE46,GENE47,GENE48,GENE49,GENE50,GENE51,GENE52,GENE53,GENE54,GENE55,GENE56,GENE57,GENE58,GENE59,GENE60,GENE61,GENE62,GENE63,GENE64,GENE65,GENE66,GENE67,GENE68,GENE69,GENE70,LEGEND01,NGCircosGenome,{
+  NGCircos01 = new NGCircos(GENE0,GENE1,GENE2,GENE3,GENE4,GENE5,GENE6,GENE7,GENE8,GENE9,GENE10,GENE11,GENE12,GENE13,GENE14,GENE15,GENE16,GENE17,GENE18,GENE19,GENE20,GENE21,GENE22,GENE23,GENE24,GENE25,GENE26,GENE27,GENE28,GENE29,GENE30,GENE31,GENE32,GENE33,GENE34,GENE35,GENE36,GENE37,GENE38,GENE39,GENE40,GENE41,GENE42,GENE43,GENE44,GENE45,GENE46,GENE47,GENE48,GENE49,GENE50,GENE51,GENE52,GENE53,GENE54,GENE55,GENE56,GENE57,GENE58,GENE59,GENE60,GENE61,GENE62,GENE63,GENE64,GENE65,GENE66,GENE67,GENE68,GENE69,GENE70,LEGEND01,BACKGROUND01,BACKGROUND02,LINE01,NGCircosGenome,{
   //Main configuration
      zoom : true,
      target : "NGCircos",
-     svgWidth : 1024,
-     svgHeight : 1024,
+     svgWidth : 800,
+     svgHeight : 800,
      svgClassName: "NGCircos",
      chrPad : 0.02, // circularity
      innerRadius: 250,
@@ -66,6 +67,18 @@
     GENEMouseOverTooltipsPadding : "3px",
     GENEMouseOverTooltipsBorderRadius : "3px",
     GENEMouseOverTooltipsOpacity : 0.8, 
+/*
+    LINEMouseEvent: true,
+    LINEMouseOverDisplay : true,
+    LINEMouseOverTooltipsHtml : "<table><tr>X</tr><tr>Y</tr></table> ",
+    LINEMouseOverTooltipsPosition : "absolute",
+    LINEMouseOverTooltipsBackgroundColor : "white",
+    LINEMouseOverTooltipsBorderStyle : "solid",
+    LINEMouseOverTooltipsBorderWidth : 0,
+    LINEMouseOverTooltipsPadding : "3px",
+    LINEMouseOverTooltipsBorderRadius : "3px",
+    LINEMouseOverTooltipsOpacity : 0.8,
+*/
   });
   NGCircos01.draw_genome(NGCircos01.genomeLength);
   NGCircos01.draw_genome(NGCircos01.genomeLength2); // NGCircos2.js callback second time
