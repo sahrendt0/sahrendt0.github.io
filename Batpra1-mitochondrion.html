@@ -12,7 +12,7 @@
         <!-- Prepare a <div> tag with "NGCircos" id to set the picture position your will draw in html -->
         <div id="NGCircos"></div>
 <!-- Data configuration -->
-<script src="./Batpra1-mitochondrion.genes.txt"></script>
+<script src="./Batpra1-mitochondrion.genes.js"></script>
 <!-- Genome configuration -->
 <script>
   var NGCircosGenome = [
@@ -24,47 +24,47 @@
   //Main configuration
      zoom : true,
      target : "NGCircos",
-     svgWidth : 900,
-     svgHeight : 600,
+     svgWidth : 1024,
+     svgHeight : 1024,
      svgClassName: "NGCircos",
-     chrPad : 0.4, // circularity
+     chrPad : 0.02, // circularity
      innerRadius: 250,
      outerRadius: 265,
      genomeFillColor: ["#000000"],
      genomeLabel: {display:false},
      ticks:{display:false},
     GENEMouseEvent : true,
-    GENEMouseClickDisplay : true
-    GENEMouseClickColor : "none"
-    GENEMouseClickArcOpacity : 1.0
-    GENEMouseClickArcStrokeColor : "none"
-    GENEMouseClickArcStrokeWidth : 1
+    GENEMouseClickDisplay : true,
+    GENEMouseClickColor : "none",
+    GENEMouseClickArcOpacity : 1.0,
+    GENEMouseClickArcStrokeColor : "none",
+    GENEMouseClickArcStrokeWidth : 1,
     GENEMouseClickTextFromData : "first",
-    GENEMouseClickTextOpacity : 1
-    GENEMouseClickTextColor : "#000000"
-    GENEMouseClickTextSize : 18
-    GENEMouseClickTextPostionX : 0
-    GENEMouseClickTextPostionY : 0
-    GENEMouseClickTextDrag : false
-    GENExlink :true
-    GENEMouseOverDisplay : true
-    GENEMouseOverColor : "none"
-    GENEMouseOverArcOpacity : 1.0
+    GENEMouseClickTextOpacity : 1,
+    GENEMouseClickTextColor : "#000000",
+    GENEMouseClickTextSize : 18,
+    GENEMouseClickTextPostionX : 0,
+    GENEMouseClickTextPostionY : 0,
+    GENEMouseClickTextDrag : false,
+    GENExlink :true,
+    GENEMouseOverDisplay : true,
+    GENEMouseOverColor : "none",
+    GENEMouseOverArcOpacity : 1.0,
     GENEMouseOverArcStrokeColor : "black",
     GENEMouseOverArcStrokeWidth : "none",
-    GENEMouseOutDisplay : true
-    GENEMouseOutAnimationTime : 500
-    GENEMouseOutColor : "none"
-    GENEMouseOutArcOpacity : 1.0
-    GENEMouseOutArcStrokeColor : "red"
-    GENEMouseOutArcStrokeWidth : 0
+    GENEMouseOutDisplay : true,
+    GENEMouseOutAnimationTime : 500,
+    GENEMouseOutColor : "none",
+    GENEMouseOutArcOpacity : 1.0,
+    GENEMouseOutArcStrokeColor : "red",
+    GENEMouseOutArcStrokeWidth : 0,
     GENEMouseOverTooltipsSetting : "custom",
-    GENEMouseOverTooltipsHtml : " "
-    GENEMouseOverTooltipsPosition : "absolute"
-    GENEMouseOverTooltipsBorderStyle : "solid"
-    GENEMouseOverTooltipsBorderWidth : 2
-    GENEMouseOverTooltipsPadding : "3px"
-    GENEMouseOverTooltipsBorderRadius : "3px"
+    GENEMouseOverTooltipsHtml : " ",
+    GENEMouseOverTooltipsPosition : "absolute",
+    GENEMouseOverTooltipsBorderStyle : "solid",
+    GENEMouseOverTooltipsBorderWidth : 2,
+    GENEMouseOverTooltipsPadding : "3px",
+    GENEMouseOverTooltipsBorderRadius : "3px",
     GENEMouseOverTooltipsOpacity : 0.8, 
   });
   NGCircos01.draw_genome(NGCircos01.genomeLength);
