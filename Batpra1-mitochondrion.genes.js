@@ -12,8 +12,8 @@ var GENE0 = [ "GENE0" , {
   {chr: "FO082258", strand: "+", start: "17", end: "394", type: "cds", name: "Rps12",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Rps12</th>\n<td>FO082258</td>\n<td>17</td>\n<td>394</td>\n</tr>\n</tbody>\n</table>"},
 ]];
 var GENE1 = [ "GENE1" , {
-  innerRadius: 20,
-  outerRadius: 40,
+  innerRadius: -5,
+  outerRadius: -25,
   pathWidth : 5,
   pathColor : "black",
   cdsColor : "#377EB8",
@@ -21,8 +21,8 @@ var GENE1 = [ "GENE1" , {
   cdsStrokeWidth : 0.75,
   arrow:false,
 } , [
-  {chr: "FO082258", strand: "+", start: "399", end: "941", type: "gene", name: "Rps7",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Rps7</th>\n<td>FO082258</td>\n<td>399</td>\n<td>941</td>\n</tr>\n</tbody>\n</table>"},
-  {chr: "FO082258", strand: "+", start: "399", end: "941", type: "cds", name: "Rps7",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Rps7</th>\n<td>FO082258</td>\n<td>399</td>\n<td>941</td>\n</tr>\n</tbody>\n</table>"},
+  {chr: "FO082258", strand: "-", start: "399", end: "941", type: "gene", name: "Rps7",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Rps7</th>\n<td>FO082258</td>\n<td>399</td>\n<td>941</td>\n</tr>\n</tbody>\n</table>"},
+  {chr: "FO082258", strand: "-", start: "399", end: "941", type: "cds", name: "Rps7",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">Rps7</th>\n<td>FO082258</td>\n<td>399</td>\n<td>941</td>\n</tr>\n</tbody>\n</table>"},
 ]];
 var GENE2 = [ "GENE2" , {
   innerRadius: 20,
@@ -35,7 +35,8 @@ var GENE2 = [ "GENE2" , {
   arrow:false,
 } , [
   {chr: "FO082258", strand: "+", start: "987", end: "1970", type: "gene", name: "nad1",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">nad1</th>\n<td>FO082258</td>\n<td>987</td>\n<td>1970</td>\n</tr>\n</tbody>\n</table>"},
-  {chr: "FO082258", strand: "+", start: "987", end: "1970", type: "cds", name: "nad1",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">nad1</th>\n<td>FO082258</td>\n<td>987</td>\n<td>1970</td>\n</tr>\n</tbody>\n</table>"},
+  {chr: "FO082258", strand: "+", start: "987", end: "1300", type: "cds", name: "nad1",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">nad1</th>\n<td>FO082258</td>\n<td>987</td>\n<td>1970</td>\n</tr>\n<tr>\n<th scope=\"row\">nad1.1</th>\n<td>FO082258</td>\n<td>987</td>\n<td>1300</td>\n</tr></tbody>\n</table>"},
+  {chr: "FO082258", strand: "+", start: "1500", end: "1970", type: "cds", name: "nad1",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">nad1</th>\n<td>FO082258</td>\n<td>987</td>\n<td>1970</td>\n</tr>\n<tr>\n<th scope=\"row\">nad1.2</th>\n<td>FO082258</td>\n<td>1500</td>\n<td>1970</td>\n</tr></tbody>\n</table>"},
 ]];
 var GENE3 = [ "GENE3" , {
   innerRadius: 20,
@@ -922,8 +923,8 @@ var GENE70 = [ "GENE70" , {
   {chr: "FO082258", strand: "+", start: "42399", end: "43559", type: "cds", name: "cob",html:"<table class=\"table\">\n<thead class=\"thead-light\">\n<tr>\n<th scope=\"col\">Gene</th>\n<th scope=\"col\">Scaffold</th>\n<th scope=\"col\">Start</th>\n<th scope=\"col\">End</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<th scope=\"row\">cob</th>\n<td>FO082258</td>\n<td>42399</td>\n<td>43559</td>\n</tr>\n</tbody>\n</table>",link: "http://pfam.xfam.org/family/PF00033"},
 ]];
 var LEGEND01 = [ "LEGEND01" , {
-  x: -70,
-  y: -50,
+  x: -400,
+  y: -400,
   title: "",
   titleSize: 14,
   titleWeight: "bold",
