@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aaoar1-mitochondrion</title>
+    </head>
+    <body>
+        <!-- NGCircos.js, Jquery.js and D3.js import -->
+        <script src="jquery.js"></script>
+        <script src="d3.js"></script>
+        <script src="NGCircos.js"></script>
+        <!-- Prepare a <div> tag with "NGCircos" id to set the picture position your will draw in html -->
+        <div id="NGCircos"></div>
+<!-- Data configuration -->
+<script src="./Aaoar1-mitochondrion.genes.js"></script>
+<script src="./Aaoar1-mitochondrion.GCavg.js"></script>
+<!-- Genome configuration -->
+<script>
+  var NGCircosGenome = [
+    [
+     ["scaffold_1" , 30783]
+     ["scaffold_2" , 7248]
+    ]
+  ];
+  NGCircos01 = new NGCircos(GENE0,GENE1,GENE2,GENE3,GENE4,GENE5,GENE6,GENE7,GENE8,GENE9,GENE10,GENE11,GENE12,GENE13,GENE14,GENE15,GENE16,GENE17,GENE18,GENE19,GENE20,GENE21,GENE22,GENE23,GENE24,GENE25,GENE26,GENE27,GENE28,GENE29,GENE30,GENE31,GENE32,GENE33,GENE34,GENE35,GENE36,GENE37,GENE38,GENE39,GENE40,GENE41,GENE42,GENE43,LEGEND01,BACKGROUND01,BACKGROUND02,LINE01,NGCircosGenome,{
+  //Main configuration
+     zoom : true,
+     target : "NGCircos",
+     svgWidth : 800,
+     svgHeight : 800,
+     svgClassName: "NGCircos",
+     chrPad : 0.02, // circularity
+     innerRadius: 250,
+     outerRadius: 265,
+     genomeFillColor: ["#000000"],
+     genomeLabel: {display:false},
+     ticks:{display:false},
+    GENEMouseEvent : true,
+    GENEMouseClickDisplay : true,
+    GENEMouseClickColor : "none",
+    GENEMouseClickArcOpacity : 1.0,
+    GENEMouseClickArcStrokeColor : "none",
+    GENEMouseClickArcStrokeWidth : 1,
+    GENEMouseClickTextFromData : "first",
+    GENEMouseClickTextOpacity : 1,
+    GENEMouseClickTextColor : "#000000",
+    GENEMouseClickTextSize : 18,
+    GENEMouseClickTextPostionX : 0,
+    GENEMouseClickTextPostionY : 0,
+    GENEMouseClickTextDrag : false,
+    GENExlink :true,
+    GENEMouseOverDisplay : true,
+    GENEMouseOverColor : "none",
+    GENEMouseOverArcOpacity : 1.0,
+    GENEMouseOverArcStrokeColor : "black",
+    GENEMouseOverArcStrokeWidth : "none",
+    GENEMouseOutDisplay : true,
+    GENEMouseOutAnimationTime : 500,
+    GENEMouseOutColor : "none",
+    GENEMouseOutArcOpacity : 1.0,
+    GENEMouseOutArcStrokeColor : "red",
+    GENEMouseOutArcStrokeWidth : 0,
+    GENEMouseOverTooltipsSetting : "custom",
+    GENEMouseOverTooltipsHtml : " ",
+    GENEMouseOverTooltipsPosition : "absolute",
+    GENEMouseOverTooltipsBorderStyle : "solid",
+    GENEMouseOverTooltipsBorderWidth : 2,
+    GENEMouseOverTooltipsPadding : "3px",
+    GENEMouseOverTooltipsBorderRadius : "3px",
+    GENEMouseOverTooltipsOpacity : 0.8, 
+  });
+  NGCircos01.draw_genome(NGCircos01.genomeLength);
+  NGCircos01.draw_genome(NGCircos01.genomeLength2); // NGCircos2.js callback second time
+</script>
+    </body>
+</html>
